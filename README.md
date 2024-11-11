@@ -4,7 +4,7 @@ This project demonstrates how to use the [Cloudinary Next.js SDK](https://next.c
 The sample project showcases the following functionality:
 
 * Using the [Upload Widget](https://cloudinary.com/documentation/upload_widget) to upload images to your product environment via the Next.js SDK.
-* Using the [REST API](https://cloudinary.com/documentation/client_side_uploading#direct_call_to_the_api) to upload images to your product environment via Next.js Server Actions
+* Using the [Node.js Upload](https://cloudinary.com/documentation/node_image_and_video_upload) to upload images to your product environment via Next.js Server Actions
 * [Transforming](https://cloudinary.com/documentation/image_transformations) and displaying images
 
 # Setup
