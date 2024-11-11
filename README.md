@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Introduction
+This project demonstrates how to use the [Cloudinary Next.js SDK](https://next.cloudinary.dev) to create a photo album app.
 
-## Getting Started
+The sample project showcases the following functionality:
 
-First, run the development server:
+* Using the [Upload Widget](https://cloudinary.com/documentation/upload_widget) to upload images to your product environment via the Next.js SDK.
+* Using the [REST API](https://cloudinary.com/documentation/client_side_uploading#direct_call_to_the_api) to upload images to your product environment via Next.js Server Actions
+* [Transforming](https://cloudinary.com/documentation/image_transformations) and displaying images
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Setup
+
+[Create an unsigned upload preset](https://cloudinary.com/documentation/upload_presets#creating_and_managing_upload_presets) in your Cloudinary product environment and make a note of the name of the unsigned upload preset as well as your Cloudinary cloud name.
+
+Create a `.env` file with the following content at the root of the project:
+
+```
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="YOUR-CLOUDINARY-ACCOUNT-NAME"
+CLOUDINARY_API_KEY="YOUR-CLOUDINARY-API-KEY"
+CLOUDINARY_API_SECRET="YOUR-CLOUDINARY-API-SECRET"
+CLOUDINARY_TAG="myphotoalbum-nextjs"
+NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET="YOUR-CLOUDINARY-UPLOAD-PRESET-NAME"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Run
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+From your terminal, in the root folder of your project, run:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* `npm i`
+* `npm run dev`
 
-## Learn More
+Then, click the localhost link to open the app in your browser, or open a browser and navigate to localhost:3000 or to the port displayed in the terminal.
 
-To learn more about Next.js, take a look at the following resources:
+Try uploading images using each of the upload tabs, then see your images displayed in the Photo Album tab.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Explore
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Take a look at the source code to understand how it works.
+* Discover more features in the [Cloudinary Docs](https://cloudinary.com/documentation).
+* Ask for help in our [Community Forum](https://community.cloudinary.com/), in [Discord](https://discord.gg/Cloudinary), or [raise a support request](https://support.cloudinary.com/hc/en-us/requests/new).
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to fork this repo as a starting point for your own Next.js app, contribute to it, or star it if you like it!
