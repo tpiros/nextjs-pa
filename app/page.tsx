@@ -10,7 +10,9 @@ const WelcomePage = () => {
         >
           Cloudinary Next.js SDK
         </a>
-        .
+        via the{' '}
+        <code className="bg-gray-700 text-sm rounded text-white p-1">app</code>{' '}
+        router.
       </p>
       <div className="p-2">
         The following pieces of functionality are exposed in this app:
