@@ -13,14 +13,15 @@ const Uploader = () => {
     });
   }
 
-  function handleError() {
-
-  }
+  function handleError() {}
 
   return (
     <>
-      <CldUploadWidget uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET} onError={handleError}
-        onSuccess={handleSuccess}>
+      <CldUploadWidget
+        uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET}
+        onError={handleError}
+        onSuccess={handleSuccess}
+      >
         {({ open }) => {
           return (
             <button className="btn btn-neutral" onClick={() => open()}>
@@ -31,7 +32,7 @@ const Uploader = () => {
       </CldUploadWidget>
       {info && <p>{JSON.stringify(info)}</p>}
     </>
-  )
-}
+  );
+};
 
 export default Uploader;
