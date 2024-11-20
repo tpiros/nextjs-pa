@@ -10,7 +10,7 @@ The sample project showcases the following functionality:
 
 # Setup
 
-[Create an unsigned upload preset](https://cloudinary.com/documentation/upload_presets#creating_and_managing_upload_presets) in your Cloudinary product environment and make a note of the name of the unsigned upload preset as well as your Cloudinary cloud name.
+[Create an unsigned upload preset](https://cloudinary.com/documentation/upload_presets#creating_and_managing_upload_presets) in your Cloudinary product environment and make a note of the name of the unsigned upload preset as well as your Cloudinary cloud name. Please make sure that when creating the upload preset, you specify the a tag `myphotoalbum-nextjs` so that all assets uploaded via the Upload Widget will also be shown in the gallery.
 
 Create a `.env` file with the following content at the root of the project:
 
