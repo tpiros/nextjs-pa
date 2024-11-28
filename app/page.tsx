@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const WelcomePage = () => {
   return (
     <>
@@ -18,12 +20,12 @@ const WelcomePage = () => {
         The following pieces of functionality are exposed in this app:
         <ul className="list-disc list-inside">
           <li>
-            <a
+            <Link
               className="underline text-blue-500 hover:bg-blue-200 rounded-full transition duration-300"
-              href="/upload"
+              href="/upload-widget"
             >
               Upload (Upload Widget)
-            </a>
+            </Link>
             : shows an example implementation of the{' '}
             <a
               className="underline text-blue-500 hover:bg-blue-200 rounded-full transition duration-300"
@@ -34,12 +36,12 @@ const WelcomePage = () => {
             .
           </li>
           <li>
-            <a
+            <Link
               className="underline text-blue-500 hover:bg-blue-200 rounded-full transition duration-300"
               href="/server-action-upload"
             >
               Server Action Upload
-            </a>
+            </Link>
             : shows an example of how to use the{' '}
             <a
               className="underline text-blue-500 hover:bg-blue-200 rounded-full transition duration-300"
