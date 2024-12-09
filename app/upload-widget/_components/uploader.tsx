@@ -3,23 +3,20 @@
 import { CldUploadWidget } from 'next-cloudinary';
 import { useState } from 'react';
 
+// for more info see: https://next.cloudinary.dev/clduploadwidget/basic-usage
 const Uploader = () => {
   const [info, setInfo] = useState();
   function handleSuccess(result, widget) {
     setInfo(result?.info);
-    // setError(null);
     widget.close({
       quiet: true,
     });
   }
 
-  function handleError() {}
-
   return (
     <>
       <CldUploadWidget
         uploadPreset={process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET}
-        onError={handleError}
         onSuccess={handleSuccess}
       >
         {({ open }) => {

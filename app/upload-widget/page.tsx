@@ -1,5 +1,6 @@
-import Uploader from "./_components/uploader";
+import Uploader from './_components/uploader';
 
+// This component integrates Cloudinary's upload widget via the <Uploader> component.
 const UploadWidgetPage = () => {
   return (
     <div className="m-2 space-y-4">
@@ -27,9 +28,7 @@ const UploadWidgetPage = () => {
         </ul>
       </div>
       <Uploader />
-
-
     </div>
-  )
-}
+  );
+};
 export default UploadWidgetPage;
